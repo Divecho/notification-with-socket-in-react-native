@@ -1,0 +1,64 @@
+# ============================================
+#   COMMON - Ignore node_modules everywhere
+# ============================================
+LiveUpdates/node_modules/
+QuickBookProBackend/node_modules/
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*
+LiveUpdates/.env
+QuickBookProBackend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# ============================================
+#   REACT NATIVE - LiveUpdates
+# ============================================
+LiveUpdates/android/.gradle/
+LiveUpdates/android/app/build/
+LiveUpdates/android/build/
+LiveUpdates/android/local.properties
+LiveUpdates/android/*.keystore
+LiveUpdates/android/*.jks
+
+LiveUpdates/ios/Pods/
+LiveUpdates/ios/build/
+LiveUpdates/ios/*.xcworkspace
+
+LiveUpdates/.expo/
+LiveUpdates/.expo-shared/
+LiveUpdates/.cache/
+LiveUpdates/.metro/
+
+# ============================================
+#   NODE.JS - QuickBookProBackend
+# ============================================
+QuickBookProBackend/dist/
+QuickBookProBackend/build/
+QuickBookProBackend/tmp/
+QuickBookProBackend/uploads/
+QuickBookProBackend/public/uploads/
+QuickBookProBackend/coverage/
+
+# PM2 files (if any)
+QuickBookProBackend/*.pid
+QuickBookProBackend/*.pid.lock
+
+# Backup
+*.bak
+*.old
+*.orig
