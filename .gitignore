@@ -14,7 +14,6 @@ pnpm-debug.log*
 # LiveUpdates (React Native Project)
 # ----------------------------
 LiveUpdates/node_modules/
-LiveUpdates/android/
 LiveUpdates/ios/
 LiveUpdates/build/
 LiveUpdates/.expo/
