@@ -17,7 +17,7 @@ import okhttp3.*
 import java.util.concurrent.TimeUnit
 
 
-class MyService : Service() {
+class SocketService : Service() {
 
     private var ws: WebSocket? = null
     private val handler = Handler(Looper.getMainLooper())
@@ -63,7 +63,7 @@ class MyService : Service() {
         log("Connecting WebSocket…")
 
         val request = Request.Builder()
-            .url("ws://192.168.1.4:4000") // आपका server IP
+            .url("ws://192.168.1.7:4000") // आपका server IP
             .build()
 
         val client = OkHttpClient.Builder()
@@ -159,7 +159,7 @@ class MyService : Service() {
 
 
     private fun log(msg: String) {
-        Log.d("MyService", msg)
+        Log.d("SocketService", msg)
     }
 
     override fun onBind(intent: Intent?): IBinder? = null

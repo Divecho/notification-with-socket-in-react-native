@@ -33,14 +33,14 @@
 
         <!-- 🔥 Foreground WebSocket Service -->
         <service
-            android:name=".MyService"
+            android:name=".SocketService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
 
         <!-- 🔥 Auto Start on BOOT -->
         <receiver
-            android:name=".BootReceiver"
+            android:name=".SocketBootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

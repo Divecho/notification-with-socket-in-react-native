@@ -14,10 +14,10 @@ class MainActivity : ReactActivity() {
 
         // Start foreground service when app is opened
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val myServiceIntent = Intent(this, MyService::class.java)
+            val myServiceIntent = Intent(this, SocketService::class.java)
             startForegroundService(myServiceIntent)
         } else {
-            val myServiceIntent = Intent(this, MyService::class.java)
+            val myServiceIntent = Intent(this, SocketService::class.java)
             startService(myServiceIntent)
         }
     }

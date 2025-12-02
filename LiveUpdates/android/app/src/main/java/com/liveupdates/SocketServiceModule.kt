@@ -6,18 +6,14 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 
-class MyServiceModule(private val reactContext: ReactApplicationContext) :
-    ReactContextBaseJavaModule(reactContext) {
+class SocketServiceModule(private val reactContext: ReactApplicationContext)
+    : ReactContextBaseJavaModule(reactContext) {
 
-    init {
-        GlobalReactContext.set(reactContext)
-    }
-
-    override fun getName() = "MyServiceModule"
+    override fun getName() = "SocketServiceModule"
 
     @ReactMethod
     fun startService() {
-        val intent = Intent(reactContext, MyService::class.java)
+        val intent = Intent(reactContext, SocketService::class.java)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             reactContext.startForegroundService(intent)
